@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/photo"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter" />
+
+        <TextView
+            android:layout_alignParentRight="true"
+            android:id="@+id/nome_field"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_toRightOf="@+id/photo" />
+
+        <TextView
+            android:layout_alignParentRight="true"
+            android:id="@+id/descricao_field"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/nome_field"
+            android:layout_marginStart="10dp"
+            android:layout_toRightOf="@+id/photo" />
+
+        <TextView
+            android:layout_alignParentRight="true"
+            android:id="@+id/preco"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/descricao_field"
+            android:layout_marginStart="4dp"
+            android:layout_toRightOf="@+id/photo" />
+        <LinearLayout
+            android:paddingTop="30dp"
+            android:layout_below="@id/preco"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Button
+                android:id="@+id/menos"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:text="-"></Button>
+
+            <TextView
+                android:id="@+id/compras"
+                android:layout_width="100dp"
+                android:gravity="center"
+                android:layout_height="wrap_content">
+            </TextView>
+
+            <Button
+                android:id="@+id/mais"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:text="+"></Button>
+        </LinearLayout>
+
+    </RelativeLayout>
+</LinearLayout>
