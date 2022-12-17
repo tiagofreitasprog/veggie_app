@@ -21,3 +21,10 @@ DataProdutos.class
 Carrinho.class
 
 -- Responsavél por criar e o tratamento de dados do carrinho
+
+E-commerce com website e app conectadas V.1.2.0 [ALPHA]
+
+-- Adicionado sistema de Login e as respetivas Views
+-- Adicionado sistema registar
+-- Alteração de classes
+-- Alteração da API
