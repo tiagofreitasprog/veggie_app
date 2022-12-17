@@ -2,36 +2,49 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:background="@drawable/background_img"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/background_painel"
     tools:context=".MainActivity">
-
     <LinearLayout
-        android:layout_margin="50dp"
-        android:id="@+id/foto"
-        android:layout_width="wrap_content"
-        android:layout_marginTop="25dp"
-        android:layout_marginLeft="100dp"
-        android:layout_height="wrap_content">
-        <ImageView
-            android:id="@+id/foto_img"
-            android:src="@drawable/burger"
-            android:layout_width="200dp"
-            android:layout_height="200dp">
-        </ImageView>
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <TextView
+            android:id="@+id/user_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="Username"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Large" />
+        <Button
+            android:id="@+id/buttonLogout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Logout" />
     </LinearLayout>
 
     <LinearLayout
-        android:layout_below="@id/foto"
-        android:layout_marginTop="50dp"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:paddingTop="220dp">
+
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/destaques"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content">
-        </androidx.recyclerview.widget.RecyclerView>
+            android:layout_height="wrap_content"></androidx.recyclerview.widget.RecyclerView>
     </LinearLayout>
 
     <LinearLayout
@@ -60,8 +73,8 @@
 
         <Button
             android:layout_width="wrap_content"
-            android:background="@drawable/custombutton"
             android:layout_height="match_parent"
+            android:background="@drawable/custombutton"
             android:text="Comprar"></Button>
     </LinearLayout>
 

@@ -12,4 +12,9 @@
     <string name="prompt_email">Email ou Username</string>
     <string name="prompt_password">Password</string>
     <string name="action_sign_in">Login</string>
+    <string name="forgot_password">Esqueci a password</string>
+    <string name="facebook_app_id">1234</string>
+    <string name="fb_login_protocol_scheme">fb1234</string>
+    <string name="facebook_client_token">56789</string>
+
 </resources>
